@@ -1,0 +1,258 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* did this to get the bottom part to be level*/
+.container{
+  width:100%;
+}
+
+
+@font-face{
+  font-family: "Stellar";
+  src: url('../../fonts/Stellar/Stellar-light.otf');
+}
+
+
+*
+{
+   margin:  0;
+   padding: 0;
+   border: 0;
+   font-family: 'Stellar';
+}
+/* ----------------------------*/
+.navbar {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+
+.navbar.scrolled {
+    background: rgb(68, 68, 68); //IE
+    background: rgba(0, 0, 0, 0.78); //NON-IE
+}
+/*----------------------------------*/
+
+
+ .navbar.transparent.navbar-default.navbar-fixed-top {
+   background-color: white;
+   border-color: transparent;
+   margin:0px;
+   border:0px;
+}
+
+.navbar-default .navbar-brand {
+    color: black;
+}
+
+.navbar-default .navbar-nav>li>a{
+   color: black;
+}
+
+.navbar-inner{
+  color:black;
+}
+
+
+.main { 
+  display: block;
+  padding-bottom: 100px;
+  text-align: center;
+ }
+#MVB{
+    outline: 1px solid black;
+    background-color: #fff;
+}
+.btn-primary {
+    border-color: black;
+}
+
+.navbar-default {
+    color: white;
+}
+
+#center {
+}
+#center h2{
+    font-family: 'Stellar-light';
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+#center p{
+    letter-spacing: 1px;
+    padding-top: 20px;
+}
+
+#vlink {
+    text-decoration: none;
+    color: black;
+}
+
+#common{
+    top:-20px;
+}
+
+/* ---------*/
+.contact h2{
+}
+
+.contact {
+    background: #white;
+    position: relative;
+    padding-bottom: 20px;
+    padding-left: 40px;
+}
+.contact * {
+    text-shadow: none;
+}
+.contact h2 {
+    color: #000;
+}
+.contact h3 {
+    border-bottom: 1px solid #000;
+    color: #000;
+    font-size: 30px;
+    font-weight: normal;
+    margin: 0 0 30px;
+    padding: 0 0 20px;
+}
+.contact p {
+    color: #000;
+    line-height: 20px;
+    padding: 0 0 20px;
+}
+.contact .contact_in {
+    padding: 40px auto 15px;
+}
+.contact .col {
+    float: left;
+    padding: 30px 30px 0 0;
+    width: 33%;
+}
+.contact .col a {
+    text-decoration: none;
+    color: #000;
+}
+.contact .col a:hover {
+    text-decoration: underline;
+}
+.contact .col form {
+    padding: 0 30px 0 0;
+}
+.contact .col form input {
+    background: #000;
+    border: 1px solid #000;
+    color: #fff;
+    font-size: 15px;
+    margin: 0 0 15px;
+    padding: 9px 10px;
+    width: 100%;
+}
+.contact .col form textarea {
+    background: #000;
+    border: 1px solid #000;
+    color: #000;
+    font-size: 15px;
+    margin: 0 0 15px;
+    min-height: 100px;
+    padding: 9px 10px;
+    width: 100%;
+}
+.contact .col form input.error,
+.contact .col form textarea.error {
+    border: 1px solid #000;
+}
+.contact .col form button {
+    background: #000;
+    border: 0;
+    color: #9E9E9E;
+    cursor: pointer;
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 14px;
+    margin: 0;
+    padding: 8px 10px;
+    transition: opacity .25s ease-in-out;
+}
+.contact .col form button:focus {
+    outline: 0;
+}
+.contact .col form .loader {
+    opacity: 0;
+    float: right;
+    margin: 6px 10px 0 0;
+    transition: opacity .25s ease-in-out;
+}
+.contact .col form.success button {
+    cursor: default;
+    opacity: 0.5;
+}
+.contact .col form.success .loader {
+    opacity: 1;
+}
+.contact .wish {
+    display: none;
+}
+.contact .phone {
+    font-weight: bold;
+}
+.contact .phone a {
+    color: #000;
+    text-decoration: none;
+}
+.contact .phone img {
+    height: 25px;
+    margin: 0 5px -7px 0;
+    width: 25px;
+}
+.contact div.error div {
+    color: #000;
+    padding: 0 0 15px;
+}
+.contact .social {
+    float: left;
+    padding: 30px 0 0;
+    width: 33%;
+}
+.contact .social a {
+    color: #000;
+    display: block;
+    height: 33px;
+    line-height: 32px;
+    margin: 0 0 15px;
+    text-decoration: none;
+}
+.contact .social a img {
+    height: 30px;
+    margin: 0 5px -10px 0;
+    width: 30px;
+}
+@media all and (max-width: 900px) {
+    .contact .col {
+        float: left;
+        padding: 30px 2px 0;
+        width: 50%;
+    }
+    .contact .social {
+        clear: both;
+        float: none;
+        margin: 0 2px;
+        width: auto;
+    }
+}
+@media all and (max-width: 900px) {
+    .contact .col {
+        clear: both;
+        float: none;
+        margin: 0 2px;
+        padding: 30px 0 0;
+        width: auto;
+    }
+}
